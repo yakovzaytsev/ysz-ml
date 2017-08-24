@@ -41,7 +41,7 @@ class AnsiblePlaybookRunsWithReturnCode(BaseMatcher):
         if self.code == 0:
             text = 'playbook runs successfully'
         else:
-            text = f'playbook fails with code {self.code}'
+            text = 'playbook fails with code %d' % self.code
         description.append_text(text)
 
 
