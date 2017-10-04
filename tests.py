@@ -24,6 +24,14 @@ baz.bar.com ansible_ssh_user=root""",
         '1.2.3.4': """# used only in tests
 [foo]
 1.2.3.4 ansible_ssh_user=root""",
+        'baz.bar.com': """# used only in tests
+[foo]
+baz.bar.com ansible_ssh_user=root
+""",
+        '1.2.3.4': """# used only in tests
+[foo]
+1.2.3.4 ansible_ssh_user=root
+""",
 
     }
     for host, inventory in inventories.items():
